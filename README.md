@@ -9,17 +9,39 @@ If viewing this as an attempt to understand the code, or as a sample of my progr
 Note: AI was used to assist with documentation of this project
 Note: The code used to generate the graphs found in the paper is included, but it is still a work in progress.
 
-## Prerequisites
+## Data Files
 
-### Required Files in `data_rep/` directory:
-- `loss_triangles_paid.csv`
-- `loss_triangles_incurred.csv`
-- `Rprocessed AMB`
-- `Rprocessed_assets`
-- `Rprocessed_BEA`
-- `Rprocessed_demo`
-- `Rprocessed_Page14`
-- `Rprocessed_uie_pw`
+This repository uses **Git LFS** (Large File Storage) to handle large data files. All required data files are included in the `data_rep/` directory and will be automatically downloaded when you clone the repository.
+
+### Core Data Files in `data_rep/` directory:
+
+#### Loss Triangle Data
+- **`loss_triangles_paid.csv`** (19MB) - Historical paid loss development triangles by company and accident year
+- **`loss_triangles_incurred.csv`** (22MB) - Historical incurred loss development triangles by company and accident year
+
+#### Economic and Demographic Data (R-processed)
+These files contain economic indicators and demographic data processed from various government sources:
+
+- **`Rprocessed_Page14`** (89MB) - Primary economic data from NAIC Page 14 filings
+- **`Rprocessed_uie_pw`** (10MB) - Unemployment insurance and population-weighted economic indicators
+- **`Rprocessed_assets`** (1.1MB) - Insurance company asset and financial strength data
+- **`Rprocessed AMB`** (97KB) - Additional economic indicators (AMB data)
+- **`Rprocessed_BEA`** (65KB) - Bureau of Economic Analysis regional economic data
+- **`Rprocessed_demo`** (90KB) - Demographic and regional characteristics data
+
+### Data Access
+All data files are stored using **Git LFS** and will be automatically available after cloning:
+
+```bash
+git clone https://github.com/calebeynon/complete-pipeline.git
+cd complete-pipeline
+# All data files in data_rep/ are ready to use!
+```
+
+**Note**: If you need to work with Git LFS:
+- Install: `git lfs install` (one-time setup)
+- All `*.csv`, `*.pkl`, `*.h5`, and `Rprocessed*` files are tracked by LFS
+- Total data size: ~149MB
 
 ## Pipeline Execution Order
 
