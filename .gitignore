@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# R
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+*-Ex.R
+*.Rproj
+.Rproj.user/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Data files (add specific data files as needed)
+*.pkl
+*.pickle
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+log/
+
+# Model outputs
+models/
+*.h5
+*.hdf5
+*.pb
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Documentation build files
+docs/_build/
+*.aux
+*.synctex.gz
+
+# Keep data_rep folder structure but not the actual data
+# Uncomment the following lines if you want to exclude data files:
+# data_rep/*.csv
+# data_rep/Rprocessed*
+
+# Exclude personal paths
+/Users/caleb/CL/
